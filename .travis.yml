@@ -7,6 +7,7 @@ script:
   - docker images
   - docker info
   - choco install -y wsl-ubuntu-1804
-  - C:/Windows/System32/bash.exe -c "export DEBIAN_FRONTEND=noninteractive && apt update && apt install -y ansible"
+  - C:/Windows/System32/bash.exe -c "export DEBIAN_FRONTEND=noninteractive && apt update && apt install -y python3 python3-pip"
+  - wsl pip3 install ansible
   - wsl ansible --version
   - wsl ansible localhost -m setup --connection=local
