@@ -8,3 +8,5 @@ script:
   - docker info
   - cd c:/ & dir
   - "C:\Program Files\Docker\Docker\DockerCli.exe" --version
+
+
