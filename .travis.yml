@@ -6,4 +6,4 @@ script:
   - docker version
   - docker images
   - docker info
-  - choco install -y wsl
+  - bash -C "apt-get update && apt-get install ansible"
