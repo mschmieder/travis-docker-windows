@@ -6,4 +6,4 @@ script:
   - docker version
   - docker images
   - docker info
-  - bash -C "apt-get update && apt-get install ansible"
+  - bash -c 'apt-get update && apt-get install ansible'
