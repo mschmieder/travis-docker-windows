@@ -8,4 +8,4 @@ script:
   - docker version
   - docker images
   - docker info
-  - C:/Program/Files\Docker\Docker\DockerCli.exe --version
+  - C:/Program Files/Docker/Docker/DockerCli.exe --version
