@@ -7,4 +7,5 @@ script:
   - docker images
   - docker info
   - choco install -y wsl-ubuntu-1804
-  - wsl apt-get update && apt-get install ansible
+  - wsl apt-get update && wsl apt-get install ansible
+  - wsl ansible -m setup --connection=local
