@@ -1,10 +1,5 @@
 # Creating local ansible user
-secedit /export /cfg c:\secpol.cfg
-(gc C:\secpol.cfg).replace("PasswordComplexity = 1", "PasswordComplexity = 0") | Out-File C:\secpol.cfg
-secedit /configure /db c:\windows\security\local.sdb /cfg c:\secpol.cfg /areas SECURITYPOLICY
-rm -force c:\secpol.cfg -confirm:$false
-
-$secpwd = ConvertTo-SecureString "ansible" -AsPlainText -Force
+$secpwd = ConvertTo-SecureString "Ans1ble_User!" -AsPlainText -Force
 New-LocalUser "ansible" -Password $secpwd -FullName "ansible" -Description "ansible user"
 Add-LocalGroupMember -Group "Administrators" -Member "ansible"
 

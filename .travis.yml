@@ -6,4 +6,4 @@ install:
   - powershell -ExecutionPolicy ByPass -File bootstrap.ps1
 
 script:
-  - wsl ansible localhost -m setup --connection=local --extra-vars "ansible_user=ansible ansible_password=ansible ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_ssh_port=5986"
+  - wsl ansible localhost -m setup --connection=local --extra-vars "ansible_user=ansible ansible_password=Ans1ble_User! ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_ssh_port=5986"
