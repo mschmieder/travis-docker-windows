@@ -6,4 +6,7 @@ script:
   - docker version
   - docker images
   - docker info
-  - bash -c 'apt-get update && apt-get install ansible'
+  - wsl --list --all
+  - wsl --list --running
+  - wslconfig /?
+  - wslconfig /list /all
