@@ -3,9 +3,8 @@ language: bash
 services: docker
 
 script:
-  - powershell -Command Install-Module DockerMsftProvider -Force
-  - powershell -Command Install-Package Docker -ProviderName DockerMsftProvider -Force
   - docker version
   - docker images
   - docker info
-  - C:/Program Files/Docker/Docker/DockerCli.exe --version
+  - cd c:/ & dir
+  - "C:\Program Files\Docker\Docker\DockerCli.exe" --version
