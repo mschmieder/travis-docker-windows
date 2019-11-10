@@ -3,10 +3,9 @@ language: bash
 services: docker
 
 script:
-  #- docker run mcr.microsoft.com/windows/nanoserver:1803 ipconfig
-  - Install-Module DockerMsftProvider -Force
-  - Install-Package Docker -ProviderName DockerMsftProvider -Force
+  - powershell -NoProfile -ExecutionPolicy Bypass -Command "Install-Module DockerMsftProvider -Force"
+  - powershell -NoProfile -ExecutionPolicy Bypass -Command "Install-Package Docker -ProviderName DockerMsftProvider -Force
   - docker version
   - docker images
   - docker info
-  - $Env:ProgramFiles\Docker\Docker\DockerCli.exe --version
+  - powershell -NoProfile -ExecutionPolicy Bypass -Command "& $Env:ProgramFiles\Docker\Docker\DockerCli.exe"
