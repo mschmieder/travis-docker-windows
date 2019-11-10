@@ -6,6 +6,7 @@ script:
   - docker version
   - docker images
   - docker info
+  - choco install -y wsl-ubuntu-1804
   - wsl --list --all
   - wsl --list --running
   - wslconfig /?
