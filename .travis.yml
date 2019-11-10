@@ -6,4 +6,4 @@ script:
   - docker version
   - docker images
   - docker info
-  - powershell -Command & "C:/Program Files/Docker/Docker/DockerCli.exe" -SwitchDaemon
+  - choco install -y wsl
