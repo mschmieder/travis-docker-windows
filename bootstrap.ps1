@@ -3,7 +3,7 @@
 
 # Install Ansbile
 & C:/Windows/System32/bash.exe -c "export DEBIAN_FRONTEND=noninteractive && apt update && apt install -y python3 python3-pip"
-& wsl pip3 install ansible
+& wsl pip3 install ansible pywinrm
 
 # Prepare system that it can be accessed by ansible
 $url = "https://raw.githubusercontent.com/ansible/ansible/devel/examples/scripts/ConfigureRemotingForAnsible.ps1"
