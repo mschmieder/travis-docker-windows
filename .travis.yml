@@ -6,5 +6,4 @@ script:
   - docker version
   - docker images
   - docker info
-  - cd c:/ & dir
-  - powershell -Command & $Env:ProgramFiles\Docker\Docker\DockerCli.exe -SwitchDaemon .
+  - powershell -Command "& $$Env:ProgramFiles\Docker\Docker\DockerCli.exe -SwitchDaemon ."
